@@ -1,6 +1,7 @@
 
 <script>
     const logoUrl = new URL('../public/logo.png', import.meta.url).href
+    const formUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSe1oLrxaNzDOSdHQ9fDgNUWj3rTf5L0PKQl7suxVs-D1YlJQQ/viewform'
 </script>
 
 <body>
@@ -10,7 +11,7 @@
         </div>
         <div class="buttons">
             <button class="button"><h2>Home</h2></button>
-            <button class="button"><h2>Get In Touch</h2></button>
+            <a href="{formUrl}" target="_blank" class="button"><h2>Get In Touch</h2></a>
         </div>
     </div>
 </body>
@@ -53,6 +54,8 @@
         min-width: 150px;
         position: relative; 
         overflow: hidden; 
+        text-decoration: none;
+        font-size: 15px;
     }
 
     /* .button:hover {
